@@ -1,0 +1,97 @@
+Mono path[0] = 'C:/Users/flami/Google Drive/game/New Unity Project/test stage v2_Data/Managed'
+Mono path[1] = 'C:/Users/flami/Google Drive/game/New Unity Project/test stage v2_Data/Mono'
+Mono config path = 'C:/Users/flami/Google Drive/game/New Unity Project/test stage v2_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/flami/Google Drive/game/New Unity Project/test stage v2_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55333
+Multi-casting "[IP] 25.6.222.91 [Port] 55333 [Flags] 2 [Guid] 1949552081 [EditorId] 733559158 [Version] 1048832 [Id] WindowsPlayer(AnugComputer) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55333]
+PlayerConnection already initialized - listening to [0.0.0.0:55333]
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Vendor:   NVIDIA
+    VRAM:     2010 MB
+    Driver:   24.21.13.9764
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v2_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.084814 ms
+The referenced script on this Behaviour (Game Object 'HUD') is missing!
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1754)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.261712 ms
+System memory in use before: 16.9 MB.
+System memory in use after: 16.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 469.
+Total: 0.369065 ms (FindLiveObjects: 0.031218 ms CreateObjectMapping: 0.022665 ms MarkObjects: 0.290377 ms  DeleteObjects: 0.015395 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.019382 ms
+System memory in use before: 16.7 MB.
+System memory in use after: 16.7 MB.
+
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 345.
+Total: 1.289377 ms (FindLiveObjects: 0.154383 ms CreateObjectMapping: 0.094939 ms MarkObjects: 0.635066 ms  DeleteObjects: 0.399001 ms)
+
+The referenced script on this Behaviour (Game Object 'HUD') is missing!
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1754)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.505914 ms
+System memory in use before: 16.8 MB.
+System memory in use after: 16.8 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 469.
+Total: 0.399856 ms (FindLiveObjects: 0.038916 ms CreateObjectMapping: 0.026942 ms MarkObjects: 0.320312 ms  DeleteObjects: 0.011974 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.752243 ms
+System memory in use before: 16.7 MB.
+System memory in use after: 16.7 MB.
+
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 345.
+Total: 0.850176 ms (FindLiveObjects: 0.047469 ms CreateObjectMapping: 0.039344 ms MarkObjects: 0.373769 ms  DeleteObjects: 0.385316 ms)
+
+The referenced script on this Behaviour (Game Object 'HUD') is missing!
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Mono/MonoBehaviour.cpp Line: 1754)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.665857 ms
+System memory in use before: 16.8 MB.
+System memory in use after: 16.8 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 469.
+Total: 0.328010 ms (FindLiveObjects: 0.030363 ms CreateObjectMapping: 0.019672 ms MarkObjects: 0.266428 ms  DeleteObjects: 0.010691 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.025942 ms
+System memory in use before: 16.7 MB.
+System memory in use after: 16.7 MB.
+
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 345.
+Total: 0.906626 ms (FindLiveObjects: 0.045331 ms CreateObjectMapping: 0.041482 ms MarkObjects: 0.368637 ms  DeleteObjects: 0.448609 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 4c7c -> priority: 1 

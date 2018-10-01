@@ -1,0 +1,37 @@
+Mono path[0] = 'C:/Users/flami/Google Drive/game/New Unity Project/test stage v1_Data/Managed'
+Mono path[1] = 'C:/Users/flami/Google Drive/game/New Unity Project/test stage v1_Data/Mono'
+Mono config path = 'C:/Users/flami/Google Drive/game/New Unity Project/test stage v1_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/flami/Google Drive/game/New Unity Project/test stage v1_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55019
+Multi-casting "[IP] 192.168.0.10 [Port] 55019 [Flags] 2 [Guid] 746953722 [EditorId] 2023597756 [Version] 1048832 [Id] WindowsPlayer(AnugComputer) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55019]
+PlayerConnection already initialized - listening to [0.0.0.0:55019]
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Vendor:   NVIDIA
+    VRAM:     2010 MB
+    Driver:   24.21.13.9764
+FMOD failed to initialize the output device, attempting to initialize the null output.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Audio/AudioManager.cpp Line: 1091)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.139 seconds
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\flami\Google Drive\game\New Unity Project\test stage v1_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
