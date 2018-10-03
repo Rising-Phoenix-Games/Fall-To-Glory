@@ -11,6 +11,8 @@ TagManager:
   - console
   - playerAttackRight
   - playerAttackLeft
+  - playerBlockLeft
+  - playerBlockRight
   layers:
   - Default
   - TransparentFX

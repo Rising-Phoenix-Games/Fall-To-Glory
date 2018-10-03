@@ -18,6 +18,8 @@ public class playerCombat : MonoBehaviour {
 	public bool godMode = false;
 	public float attackTime;
 	public float attackDuration;
+	public float abilityTime;
+	public float abilityDuration;
 
 
 	// Use this for initialization
@@ -50,6 +52,12 @@ public class playerCombat : MonoBehaviour {
 			attackTime = Time.time + attackDuration;
 			playerKnightMovementAnim.SetInteger("facing", playerMovement.facing);
 			playerKnightMovementAnim.SetTrigger("basic attack");
+		}
+
+		if (Input.GetButtonDown("Fire2")&&Time.time > abilityTime) {
+			abilityTime = Time.time + abilityDuration;
+			playerKnightMovementAnim.SetInteger("facing", playerMovement.facing);
+			playerKnightMovementAnim.SetTrigger("ability");
 		}
 
 		if (godMode) {
