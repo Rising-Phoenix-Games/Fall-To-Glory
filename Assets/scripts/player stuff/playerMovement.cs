@@ -7,6 +7,7 @@ public class playerMovement : MonoBehaviour {
 	Rigidbody2D playerRB;
 	public Animator playerKnightMovementAnim;
 
+
 	// Use this for initialization
 	void Start () {
 		playerKnightMovementAnim = GetComponent<Animator>();
@@ -14,44 +15,12 @@ public class playerMovement : MonoBehaviour {
 	}
 
 	public float playerMovementSpeed = 7f;
-	public float playerJumpHeight = 10;
 	public int dashSpeed = 15;
 	public int facing;
 	public bool moving = false;
-	bool canJump = true;
-	bool canDoubleJump = true;
-
-
-	void OnCollisionEnter2D(Collision2D collision)
-	{
-	    if (collision.gameObject.CompareTag("Platform"))
-	    {
-	        canJump=true;
-					canDoubleJump=true;
-	    }
-	}
-
-	void OnCollisionExit2D(Collision2D collision)
-	{
-	    if (collision.gameObject.CompareTag("Platform"))
-	    {
-				canDoubleJump=true;
-	    }
-	}
 
 	// Update is called once per frame
 	void Update () {
-
-		if ((Input.GetButtonDown("Jump")) && (canJump)) { //jumping code
-			GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-			playerRB.AddForce(new Vector2(0, playerJumpHeight), ForceMode2D.Impulse);
-			canJump=false;
-		}
-		if ((Input.GetButtonDown("Jump")) && ((canDoubleJump) && !(canJump))) {//double jumping code
-			GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-			playerRB.AddForce(new Vector2(0, playerJumpHeight), ForceMode2D.Impulse);
-			canDoubleJump=false;
-		}
 		if (Input.GetKey(KeyCode.S)) { //nothing... yet
 				//transform.Translate(Vector2.down * playerMovementSpeed * Time.deltaTime);
 				moving = false;

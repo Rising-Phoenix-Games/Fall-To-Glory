@@ -13,6 +13,7 @@ TagManager:
   - playerAttackLeft
   - playerBlockLeft
   - playerBlockRight
+  - playerfeet
   layers:
   - Default
   - TransparentFX
