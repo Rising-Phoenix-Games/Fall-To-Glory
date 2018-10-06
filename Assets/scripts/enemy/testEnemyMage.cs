@@ -68,7 +68,13 @@ public class testEnemyMage : MonoBehaviour {
 
 				Vector2 direction = heading / heading.magnitude;
 
-				GameObject fireballCopy = Instantiate(fireballPrefab, (Vector2)transform.position, Quaternion.LookRotation(new Vector3 (0, 0, (Mathf.Rad2Deg*Mathf.Atan	((target.transform.position.y - transform.position.y)/(target.transform.position.x - transform.position.x))))));
+				Vector3 diff = target.transform.position - this.transform.position;
+
+				diff.Normalize();
+
+				float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+
+				GameObject fireballCopy = Instantiate(fireballPrefab, (Vector2)transform.position, Quaternion.Euler(0f, 0f, rot_z));
 
 				fireballCopy.GetComponent<enemyFireball>().direction = direction;
 			}
