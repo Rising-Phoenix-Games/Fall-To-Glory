@@ -32,6 +32,7 @@ public class weaponSwing : MonoBehaviour {
 			canHit = false;
 		}
 		if (Input.GetButtonDown("Fire1")&&Time.time > player.GetComponent<playerCombat>().attackTime) {
+			this.gameObject.GetComponent<AudioSource>().Play();
 			if ((this.gameObject.tag == "playerAttackRight") && (player.GetComponent<playerMovement>().facing == 1)) {
 				attack(target, canHit);
 			}
