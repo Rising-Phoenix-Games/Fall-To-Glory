@@ -1,4 +1,4 @@
-[Heroic Start.wav](/f/Heroic%20Start.wav) ![](firstGame/Story/Story4Wiki/Area%201.png)
+[Heroic Start.wav](/f/Heroic%20Start.wav) 
 
 <h1>Main Quests</h1>
 
@@ -27,3 +27,5 @@ Shady Outpost (3) Ametur Escort - Escort the merchant from the shady outpost to 
 
 Treecutter's Dialema - Defend the lumberjack's cabin from the waves of enemies  
 A Guide to the Wild - Deliver Notes on monsters from The Shady Outpost Beastmaster to the Rocky Outpost Beastmaster
+
+![](https://github.com/BurningSunGames/firstGame/blob/master/Story/Story4Wiki/Area%201.png)
