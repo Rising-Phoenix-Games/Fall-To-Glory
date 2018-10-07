@@ -79,5 +79,6 @@ public class testEnemyMage : MonoBehaviour {
 				fireballCopy.GetComponent<enemyFireball>().direction = direction;
 			}
 		//above is for casting fireball at the player
+		//Testing
 		}
 }
