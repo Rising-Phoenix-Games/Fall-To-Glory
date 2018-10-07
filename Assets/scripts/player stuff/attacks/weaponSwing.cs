@@ -45,6 +45,7 @@ public class weaponSwing : MonoBehaviour {
 	void attack (GameObject target, bool canHit) {
 		if (canHit) {
 			target.SendMessage("dealDamage", 10, SendMessageOptions.DontRequireReceiver);
+			//deals damage if the weapon can hit.
 		}
 	}
 }
