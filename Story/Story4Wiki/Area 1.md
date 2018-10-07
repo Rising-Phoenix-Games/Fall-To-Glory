@@ -1,4 +1,4 @@
-[Heroic Start.wav](/f/Heroic%20Start.wav) ![](/f/1534735650/Area%201.png)
+[Heroic Start.wav](/f/Heroic%20Start.wav) ![](firstGame/Story/Story4Wiki/Area%201.png)
 
 <h1>Main Quests</h1>
 
@@ -15,7 +15,7 @@ Cliffside - break into the guards quarters and kill the guards & Guard Captian
 Small achivements -Break into the town  
 Into the Archive - Kill the first Boss
 
-<h1>Side Quests<h1>
+<h1>Side Quests</h1>
 
 <h2>Ordered</h2>
 
