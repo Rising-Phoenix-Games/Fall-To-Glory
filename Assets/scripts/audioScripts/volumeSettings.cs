@@ -24,4 +24,10 @@ public class volumeSettings : MonoBehaviour {
 	public void volumeChange () {
 		volume = volumeSlider.value;
 	}
+
+	public void volumeSet (float newValue) {
+			 float newVol = AudioListener.volume;
+			 newVol = newValue;
+			 AudioListener.volume = newVol;
+	 }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class pauseMenu : MonoBehaviour {
 
@@ -16,6 +17,7 @@ public class pauseMenu : MonoBehaviour {
 		player = GameObject.FindWithTag ("Player");
 		resumeButton = GameObject.Find ("resumeButton");
 		playerMovement = player.GetComponent<playerMovement>();
+//	GameObject.Find("Main Camera").AudioListener.volume = GameObject.Find("volumeSlider").GetComponent<Slider>().value;
 		pauseThings = GameObject.FindGameObjectsWithTag("pauseMenu");
 		foreach (GameObject pauseThing in pauseThings) {
 			pauseThing.SetActive(false);

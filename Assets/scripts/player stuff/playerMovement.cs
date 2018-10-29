@@ -23,7 +23,7 @@ public class playerMovement : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey(KeyCode.S)) { //nothing... yet
 				//transform.Translate(Vector2.down * playerMovementSpeed * Time.deltaTime);
-				moving = false;
+				//moving = false;
 		}
 		if ((Input.GetAxis("Horizontal")) < 0) { //moving left
 				transform.Translate (Vector2.left * playerMovementSpeed * Time.deltaTime);

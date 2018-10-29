@@ -9,11 +9,13 @@ public class enemyFireball : MonoBehaviour {
 	public Vector2 direction;
 	public GameObject target;
 	public float maxRange;
+	public int damage;
 
 	// Use this for initialization
 	void Start () {
 		fireballAnim	= GetComponent<Animator>();
 		target = GameObject.FindWithTag("Player");
+		damage = 5;
 	}
 
 
@@ -33,11 +35,18 @@ public class enemyFireball : MonoBehaviour {
 
 	void OnCollisionStay2D(Collision2D collision)	{
 		if (collision.gameObject.CompareTag("Platform")||collision.gameObject.CompareTag("Player")) {
+			if (collision.gameObject.CompareTag("Player")) {
+				target.GetComponent<playerCombat>().TakeDamage(damage);
+			}
 			fireballAnim.SetTrigger("Fireball_collision");
 			Destroy(this.gameObject);
-			if (collision.gameObject.CompareTag("Player")) {
-				target.GetComponent<playerCombat>().TakeDamage(5);
-			}
+		}
+	}
+	void OnTriggerEnter2D (Collider2D collision) {
+		if ((collision.gameObject.CompareTag("playerBlockRight") || collision.gameObject.CompareTag("playerBlockLeft"))&&Input.GetButton("Fire2")) {
+			collision.gameObject.GetComponent<classAbility>().blockThing(damage, this.gameObject);
+			fireballAnim.SetTrigger("Fireball_collision");
+			Destroy(this.gameObject);
 		}
 	}
 }

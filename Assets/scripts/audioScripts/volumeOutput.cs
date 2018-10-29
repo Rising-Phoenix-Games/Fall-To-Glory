@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class volumeOutput : MonoBehaviour {
 
-	private Slider volumeSlider;
+//	public float volumeLevel;
 
 	// Use this for initialization
 	void Start () {
-		volumeSlider = GameObject.Find("volumeSlider").GetComponent<Slider>();
-	}
+//		AudioListener.volume = volumeLevel;
+  }
 
 	// Update is called once per frame
 	void Update () {
-		this.gameObject.GetComponent<AudioSource>().volume = volumeSlider.value;
+//		AudioListener.volume = volumeLevel;
 	}
 }

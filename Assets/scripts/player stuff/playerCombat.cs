@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -54,10 +54,12 @@ public class playerCombat : MonoBehaviour {
 			playerKnightMovementAnim.SetTrigger("basic attack");
 		}
 
-		if (Input.GetButtonDown("Fire2")&&Time.time > abilityTime) {
-			abilityTime = Time.time + abilityDuration;
+		if (Input.GetButton("Fire2")) {
 			playerKnightMovementAnim.SetInteger("facing", playerMovement.facing);
-			playerKnightMovementAnim.SetTrigger("ability");
+			playerKnightMovementAnim.SetBool("block", true);
+		}
+		else {
+			playerKnightMovementAnim.SetBool("block", false);
 		}
 
 		if (godMode) {
