@@ -616,6 +616,7 @@ GameObject:
   - component: {fileID: 315013444}
   - component: {fileID: 315013441}
   - component: {fileID: 315013440}
+  - component: {fileID: 315013448}
   m_Layer: 12
   m_Name: playerKnight
   m_TagString: Player
@@ -654,7 +655,7 @@ MonoBehaviour:
   isDead: 0
   damageImage: {fileID: 0}
   playerKnightMovementAnim: {fileID: 0}
-  godMode: 1
+  godMode: 0
   attackTime: 0
   attackDuration: 0.6
   abilityTime: 0
@@ -676,7 +677,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.265, y: 0.31}
+    oldSize: {x: 0.12, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -778,7 +779,7 @@ SpriteRenderer:
   m_SortingLayerID: 131720375
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 04ba1ede539a2554a91ae62f87922b6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c75d32e4ee5154b4f90f1f2cb894fbac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -806,6 +807,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &315013448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315013439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6127be648a7b46747a4ab5ba7163002c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashState: 0
+  dashTimer: 0
+  maxDash: 10
+  playerRB: {fileID: 0}
+  savedVelocity: {x: 0, y: 0}
 --- !u!1 &346555274
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919655457}
   - component: {fileID: 919655458}
+  - component: {fileID: 919655459}
   m_Layer: 12
   m_Name: blockLeft
   m_TagString: playerBlockLeft
@@ -1631,6 +1649,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.155, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &919655459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 919655456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0006aeaedd83a41bd3115816cbd803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageReduction: 5
 --- !u!1 &940150326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,6 +3246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  canHit: 0
   enemyThing: {fileID: 0}
 --- !u!61 &1670965820
 BoxCollider2D:
@@ -3770,6 +3801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093395449}
   - component: {fileID: 2093395450}
+  - component: {fileID: 2093395451}
   m_Layer: 12
   m_Name: blockRight
   m_TagString: playerBlockRight
@@ -3815,6 +3847,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.155, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &2093395451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2093395448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0006aeaedd83a41bd3115816cbd803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageReduction: 5
 --- !u!1 &2128795815
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,6 +3904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  canHit: 0
   enemyThing: {fileID: 0}
 --- !u!61 &2128795818
 BoxCollider2D:

@@ -6,7 +6,7 @@ public class weaponSwing : MonoBehaviour {
 
 	public GameObject target;
 	GameObject player;
-	bool canHit;
+	public bool canHit;
 	public Collider2D enemyThing;
 
 	// Use this for initialization
@@ -34,14 +34,17 @@ public class weaponSwing : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1")&&Time.time > player.GetComponent<playerCombat>().attackTime) {
 			this.gameObject.GetComponent<AudioSource>().Play();
 			if ((this.gameObject.tag == "playerAttackRight") && (player.GetComponent<playerMovement>().facing == 1)) {
-				attack(target, canHit);
+				if (canHit) {
+					target.SendMessage("dealDamage", 10, SendMessageOptions.DontRequireReceiver);
+				}
 			}
 			if ((this.gameObject.tag == "playerAttackLeft") && (player.GetComponent<playerMovement>().facing == -1)) {
-				attack(target, canHit);
+				if (canHit) {
+					target.SendMessage("dealDamage", 10, SendMessageOptions.DontRequireReceiver);
+				}
 			}
 		}
 	}
-
 	void attack (GameObject target, bool canHit) {
 		if (canHit) {
 			target.SendMessage("dealDamage", 10, SendMessageOptions.DontRequireReceiver);
